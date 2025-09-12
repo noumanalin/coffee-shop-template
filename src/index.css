@@ -2,11 +2,15 @@
 
 
 :root {
-    --primary-bg-color: #fffbf2;
-    /* For Body Background */
+    --primary-bg-color: #fffbf2; 
     --primary-fair: #da9f5b;
     --primary-dark: #1c110f;
     --accent-color: #555555;
+
+    /* Extra spinner color variants (optional but useful) */
+  --primary-color-light: #eb9430;
+  --primary-color-medium: #a05b0c;
+  --primary-color-faint: #3b2a15;
 }
 
 body {
@@ -86,3 +90,40 @@ body {
     background-repeat: repeat-x;
     z-index: 99;
 }
+
+
+/* Loading Page */
+.my-spinner {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  border-radius: 50%;
+  -webkit-mask: radial-gradient(farthest-side, #0000 40%, var(--primary-dark) 41%);
+  background: 
+    linear-gradient(0deg, var(--primary-color-light) 50%, var(--primary-dark) 0) center/4.5px 100%,
+    linear-gradient(90deg, var(--primary-color-faint) 50%, var(--primary-color-medium) 0) center/100% 4.5px;
+  background-repeat: no-repeat;
+  animation: my-spinner-d3o0rx 1s infinite steps(12);
+}
+
+.my-spinner::before,
+.my-spinner::after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.915;
+  transform: rotate(30deg);
+}
+
+.my-spinner::after {
+  opacity: 0.83;
+  transform: rotate(60deg);
+}
+
+@keyframes my-spinner-d3o0rx {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+

@@ -6,6 +6,7 @@ const NotFound = () => {
   return (
     <>
     <PageBanner name="Page Not Found" />
+    
     </>
   )
 }

@@ -2,7 +2,9 @@
 
 const PageLoader = () => {
   return (
-    <div>loading ...</div>
+    <div role="status" className="container mx-auto h-screen pt-40 flex justify-center">
+      <div className="my-spinner"></div>
+    </div>
   )
 }
 
