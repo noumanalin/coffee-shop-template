@@ -1,95 +1,100 @@
 @import "tailwindcss";
 
+* {
+  scroll-behavior: smooth;
+}
 
 :root {
-    --primary-bg-color: #fffbf2; 
-    --primary-fair: #da9f5b;
-    --primary-dark: #1c110f;
-    --accent-color: #555555;
+  --primary-bg-color: #fffbf2;
+  --primary-fair: #da9f5b;
+  --primary-dark: #1c110f;
+  --accent-color: #555555;
 
-    /* Extra spinner color variants (optional but useful) */
+  /* Extra spinner color variants (optional but useful) */
   --primary-color-light: #eb9430;
   --primary-color-medium: #a05b0c;
   --primary-color-faint: #3b2a15;
 }
 
 body {
-    background-color: var(--primary-bg-color);
-    overflow-x: hidden;
+  background-color: var(--primary-bg-color);
+  overflow-x: hidden;
 }
 
 .text-fair {
-    color: var(--primary-fair);
+  color: var(--primary-fair);
 }
 
 .text-dark {
-    color: var(--primary-dark);
+  color: var(--primary-dark);
 }
 
 .text-accent {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 
 .wrapper {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 45px 10px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 45px 10px;
 }
 
 .center-center {
-    @apply flex items-center justify-center;
+  @apply flex items-center justify-center;
 }
 
 .bottom-border-shape::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 20px;
-    background-image: url('./assets/overlay-bottom.png');
-    background-repeat: repeat-x;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 20px;
+  background-image: url('./assets/overlay-bottom.png');
+  background-repeat: repeat-x;
 }
 
 
 .top-border-shape::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 20px;
-    background-image: url('./assets/overlay-bottom.png');
-    background-repeat: repeat-x;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 100%;
+  height: 20px;
+  background-image: url('./assets/overlay-bottom.png');
+  transform: rotate(180deg);
+  background-repeat: repeat-x;
+  z-index: 99; 
 }
 
 
 
 
 .block-border-shape::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 20px; 
-    background-image: url('./assets/overlay-bottom.png');
-    background-repeat: repeat-x; 
-    z-index: 99;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 20px;
+  background-image: url('./assets/overlay-bottom.png');
+  background-repeat: repeat-x;
+  z-index: 99;
 }
 
 .block-border-shape::before {
-    content: '';
-    position: absolute;
-    left: 0;  
-    top: -5px; 
-    width: 100%;
-    height: 20px;
-    background-image: url('./assets/overlay-bottom.png');
-    transform: rotate(180deg);
-    background-repeat: repeat-x;
-    z-index: 99;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 100%;
+  height: 20px;
+  background-image: url('./assets/overlay-bottom.png');
+  transform: rotate(180deg);
+  background-repeat: repeat-x;
+  z-index: 99;
 }
 
 
@@ -100,7 +105,7 @@ body {
   display: grid;
   border-radius: 50%;
   -webkit-mask: radial-gradient(farthest-side, #0000 40%, var(--primary-dark) 41%);
-  background: 
+  background:
     linear-gradient(0deg, var(--primary-color-light) 50%, var(--primary-dark) 0) center/4.5px 100%,
     linear-gradient(90deg, var(--primary-color-faint) 50%, var(--primary-color-medium) 0) center/100% 4.5px;
   background-repeat: no-repeat;
@@ -132,15 +137,13 @@ body {
 
 
 /* Swiper */
-.swiper-pagination-bullet{
-    background-color: var(--primary-fair) !important;
-    height: 10px !important; 
-    transition: all 0.3s ease-in-out;
+.swiper-pagination-bullet {
+  background-color: var(--primary-dark) !important;
+  height: 10px !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: var(--primary-dark) !important;
-    width: 25px !important;
-    height: 10px;
-    border-radius: 10px !important;
+  width: 20px !important;
+  border-radius: 10px !important;
 }

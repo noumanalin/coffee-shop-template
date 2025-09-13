@@ -37,3 +37,9 @@ export type TestimonialClientsArray = {
     image: string;
     message: string;
 }
+
+export type SocialLink = {
+  title: string;
+  to: string;
+  icon: ComponentType<{ size?: number }>;
+};

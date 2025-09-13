@@ -38,7 +38,7 @@ const Navbar = () => {
         </h1>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-8 capitalize">
           {navbarLinks.map((item, index) => (
             <div
               key={index}

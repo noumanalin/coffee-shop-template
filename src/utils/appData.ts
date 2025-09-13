@@ -1,5 +1,5 @@
-import { Truck, Coffee, Award, Table } from "lucide-react";
-import type { CoffeMenu, MainSlider, NavbarLinks, ServicesItem, TestimonialClientsArray } from "./types";
+import { Truck, Coffee, Award, Table,  Facebook, Instagram, Linkedin, Twitter, } from "lucide-react"; 
+import type { CoffeMenu, MainSlider, NavbarLinks, ServicesItem, SocialLink, TestimonialClientsArray } from "./types";
 
 import bannerImage1 from '../assets/main-banner-1.jpg'
 import bannerImage2 from '../assets/main-banner-2.jpg'
@@ -71,3 +71,11 @@ export const testimonialClientsArray: TestimonialClientsArray[] = [
     { name: 'Client Name', profession: "profession", image: client2Image, message: "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita" },
     { name: 'Client Name', profession: "profession", image: client3Image, message: "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita" },
 ]
+
+
+export const socialLinks: SocialLink[] = [
+    { title: "x", to: "https://x.com/", icon: Twitter },
+    { title: "facebook", to: "https://facebook.com", icon: Facebook },
+    { title: "instagram", to: "https://instagram.com", icon: Instagram },
+    { title: "linkedin", to: "https://linkedin.com", icon: Linkedin },
+];
