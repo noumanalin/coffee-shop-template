@@ -1,4 +1,4 @@
-import { Truck ,Coffee, Award, Table } from "lucide-react";
+import { Truck, Coffee, Award, Table } from "lucide-react";
 import type { CoffeMenu, MainSlider, NavbarLinks, ServicesItem, TestimonialClientsArray } from "./types";
 
 import bannerImage1 from '../assets/main-banner-1.jpg'
@@ -34,7 +34,7 @@ export const navbarLinks: NavbarLinks[] = [
 ]
 
 
-export const mainSlider:MainSlider[] = [
+export const mainSlider: MainSlider[] = [
     { title: "we have been serving", item: "coffe", subTitle: "since 1950", image: bannerImage1 },
     { title: "we have been serving", item: "coffe", subTitle: "since 1950", image: bannerImage2 },
     { title: "we have been serving", item: "coffe", subTitle: "since 1950", image: bannerImage1 },
@@ -42,30 +42,32 @@ export const mainSlider:MainSlider[] = [
 ]
 
 export const servicesItems: ServicesItem[] = [
-    {name:"fastest door delivery", description:"Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor", icon:Truck, image:serviceImage1},
-    {name:"Fresh Coffee Beans", description:"Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor", icon:Coffee, image:serviceImage2},
-    {name:"Best Quality Coffee", description:"Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor", icon:Award, image:serviceImage3},
-    {name:"Online Table Booking", description:"Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor", icon:Table, image:serviceImage4},
+    { name: "fastest door delivery", description: "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor", icon: Truck, image: serviceImage1 },
+    { name: "Fresh Coffee Beans", description: "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor", icon: Coffee, image: serviceImage2 },
+    { name: "Best Quality Coffee", description: "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor", icon: Award, image: serviceImage3 },
+    { name: "Online Table Booking", description: "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor", icon: Table, image: serviceImage4 },
 ]
 
 
 
-export const hotCoffees:CoffeMenu[] = [
-    {name:"Black Coffee", price:5, image:coffeeMenu1, description:"Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
-    {name:"Chocolete Coffee", price:7, image:coffeeMenu2, description:"Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
-    {name:"Coffee with Milk", price:9, image:coffeeMenu3, description:"Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
+export const hotCoffees: CoffeMenu[] = [
+    { name: "Black Coffee", price: 5, image: coffeeMenu1, description: "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
+    { name: "Chocolete Coffee", price: 7, image: coffeeMenu2, description: "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
+    { name: "Coffee with Milk", price: 9, image: coffeeMenu3, description: "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
 ]
 
-export const coldCoffees:CoffeMenu[] = [
-    {name:"Black Coffee", price:5, image:coffeeMenu1, description:"Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
-    {name:"Chocolete Coffee", price:7, image:coffeeMenu2, description:"Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
-    {name:"Coffee with Milk", price:9, image:coffeeMenu3, description:"Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
+export const coldCoffees: CoffeMenu[] = [
+    { name: "Black Coffee", price: 5, image: coffeeMenu1, description: "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
+    { name: "Chocolete Coffee", price: 7, image: coffeeMenu2, description: "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
+    { name: "Coffee with Milk", price: 9, image: coffeeMenu3, description: "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
 ]
 
 
-export const testimonialClientsArray:TestimonialClientsArray[] = [
-    {name:'Client Name', profession:"profession", image:client1Image, message:"Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita"},
-    {name:'Client Name', profession:"profession", image:client2Image, message:"Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita"},
-    {name:'Client Name', profession:"profession", image:client3Image, message:"Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita"},
-    {name:'Client Name', profession:"profession", image:client4Image, message:"Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita"},
+export const testimonialClientsArray: TestimonialClientsArray[] = [
+    { name: 'Client Name', profession: "profession", image: client1Image, message: "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita" },
+    { name: 'Client Name', profession: "profession", image: client2Image, message: "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita" },
+    { name: 'Client Name', profession: "profession", image: client3Image, message: "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita" },
+    { name: 'Client Name', profession: "profession", image: client4Image, message: "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita" },
+    { name: 'Client Name', profession: "profession", image: client2Image, message: "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita" },
+    { name: 'Client Name', profession: "profession", image: client3Image, message: "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita" },
 ]

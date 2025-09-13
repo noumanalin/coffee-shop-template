@@ -128,3 +128,19 @@ body {
   }
 }
 
+
+
+
+/* Swiper */
+.swiper-pagination-bullet{
+    background-color: var(--primary-fair) !important;
+    height: 10px !important; 
+    transition: all 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-dark) !important;
+    width: 25px !important;
+    height: 10px;
+    border-radius: 10px !important;
+}
