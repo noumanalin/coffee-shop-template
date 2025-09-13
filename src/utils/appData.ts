@@ -1,5 +1,5 @@
 import { Truck ,Coffee, Award, Table } from "lucide-react";
-import type { CoffeMenu, MainSlider, NavbarLinks, ServicesItem } from "./types";
+import type { CoffeMenu, MainSlider, NavbarLinks, ServicesItem, TestimonialClientsArray } from "./types";
 
 import bannerImage1 from '../assets/main-banner-1.jpg'
 import bannerImage2 from '../assets/main-banner-2.jpg'
@@ -12,6 +12,11 @@ import serviceImage4 from '../assets/service-4.jpg'
 import coffeeMenu1 from '../assets/menu-1.jpg'
 import coffeeMenu2 from '../assets/menu-2.jpg'
 import coffeeMenu3 from '../assets/menu-3.jpg'
+
+import client1Image from '../assets/testimonial-1.jpg'
+import client2Image from '../assets/testimonial-2.jpg'
+import client3Image from '../assets/testimonial-3.jpg'
+import client4Image from '../assets/testimonial-4.jpg'
 
 
 export const navbarLinks: NavbarLinks[] = [
@@ -55,4 +60,12 @@ export const coldCoffees:CoffeMenu[] = [
     {name:"Black Coffee", price:5, image:coffeeMenu1, description:"Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
     {name:"Chocolete Coffee", price:7, image:coffeeMenu2, description:"Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
     {name:"Coffee with Milk", price:9, image:coffeeMenu3, description:"Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor" },
+]
+
+
+export const testimonialClientsArray:TestimonialClientsArray[] = [
+    {name:'Client Name', profession:"profession", image:client1Image, message:"Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita"},
+    {name:'Client Name', profession:"profession", image:client2Image, message:"Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita"},
+    {name:'Client Name', profession:"profession", image:client3Image, message:"Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita"},
+    {name:'Client Name', profession:"profession", image:client4Image, message:"Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor termpor ipsum ipsum sanct cita"},
 ]

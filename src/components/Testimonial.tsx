@@ -1,7 +1,11 @@
+import SectionHead from "./SectionHead"
 
 const Testimonial = () => {
   return (
-    <div>Testimonial</div>
+    <div>
+      <SectionHead heading="testimonial" subHeadig="our Clients say"/>
+      
+    </div>
   )
 }
 

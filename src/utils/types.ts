@@ -29,3 +29,11 @@ export type CoffeMenu = {
     image: string;
     description: string;
 }
+
+
+export type TestimonialClientsArray = {
+    name: string;
+    profession: string;
+    image: string;
+    message: string;
+}
