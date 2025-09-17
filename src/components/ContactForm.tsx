@@ -12,66 +12,72 @@ const ContactForm = () => {
 
     // handle input changes
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
 
     // form submit
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        // basic regex for email validation
+        // simple email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (!formData.name.trim()) {
-            alert("Name is required");
+            alert("Please enter your name.");
             return;
         }
         if (!emailRegex.test(formData.email)) {
-            alert("Please enter a valid email");
+            alert("Enter a valid email address.");
             return;
         }
         if (!formData.subject.trim()) {
-            alert("Subject is required");
+            alert("Subject cannot be empty.");
             return;
         }
         if (formData.message.trim().length < 10) {
-            alert("Message must be at least 10 characters long");
+            alert("Message should be at least 10 characters long.");
             return;
         }
 
         setLoading(true);
 
         try {
-            // Write your api call here
+            // simulate API call
             await new Promise((resolve) => setTimeout(resolve, 2000));
 
-            alert("✅ Message sent successfully!");
+            alert("✅ Your message has been sent!");
             setFormData({ name: "", email: "", subject: "", message: "" });
         } catch (error) {
-            alert("❌ Something went wrong. Please try again.");
+            alert("❌ Failed to send message. Please try again later.");
         } finally {
             setLoading(false);
         }
     };
 
     return (
-        <section className="wrapper grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* Map */}
+        <section className="wrapper grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Map Section */}
             <Map />
 
-            {/* Form */}
-            <form onSubmit={handleSubmit} className="space-y-2">
-                <input type="text" name="name" placeholder="Your Name"
-                    value={formData.name} onChange={handleChange} className="w-full p-2 border border-gray-300 outline-none" required
+            {/* Contact Form */}
+            <form onSubmit={handleSubmit} className="space-y-4">
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full p-3 border border-gray-300 outline-none"
+                    required
                 />
 
                 <input
                     type="email"
                     name="email"
-                    placeholder="Your Email"
+                    placeholder="Email Address"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full p-2 border border-gray-300 outline-none"
+                    className="w-full p-3 border border-gray-300 outline-none"
                     required
                 />
 
@@ -81,24 +87,25 @@ const ContactForm = () => {
                     placeholder="Subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full p-2 border border-gray-300 outline-none"
+                    className="w-full p-3 border border-gray-300 outline-none"
                     required
                 />
 
                 <textarea
                     name="message"
-                    placeholder="Message"
+                    placeholder="Write your message..."
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full min-h-[100px] p-2 border border-gray-300 outline-none"
+                    className="w-full min-h-[120px] p-3 border border-gray-300 outline-none"
                     required
                 />
 
                 <button
                     type="submit"
                     disabled={loading}
-                    className={`text-dark px-8 py-2 bg-[var(--primary-fair)] transition rounded ${loading ? "opacity-50 cursor-not-allowed" : "hover:bg-opacity-80"
-                        }`}
+                    className={`text-dark px-8 py-3 bg-[var(--primary-fair)] rounded font-semibold transition ${
+                        loading ? "opacity-50 cursor-not-allowed" : "hover:bg-opacity-80"
+                    }`}
                 >
                     {loading ? "Sending..." : "Send Message"}
                 </button>

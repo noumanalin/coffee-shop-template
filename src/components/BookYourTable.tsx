@@ -41,26 +41,26 @@ const BookYourTable = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div className="text-white">
-                        <h3 className="text-4xl text-fair font-bold mb-4">30% OFF</h3>
-                        <h2 className="text-3xl font-bold mb-6">For Online Reservation</h2>
+                        <h3 className="text-4xl text-fair font-bold mb-4">Exclusive Deal</h3>
+                        <h2 className="text-3xl font-bold mb-6">Reserve Online & Save 30%</h2>
                         <p className="mb-8 leading-relaxed">
-                            Lorem justo cita erat lorem labore es, justo dolor lorem ipsum ut
-                            sed eos, ipsum et dolor feasd sit es justo. Ent justo sed sed diam.
-                            Ea et erat ut aled diam eae
+                            Book your table in advance and enjoy a seamless dining experience. 
+                            Our online reservation system is quick, easy, and comes with special 
+                            benefits just for you.
                         </p>
 
                         <ul className="space-y-3 mb-8">
                             <li className="flex items-center">
                                 <Check className="text-fair mr-2" />
-                                <span>Lorem ipsum dolor sit amet</span>
+                                <span>Instant confirmation on booking</span>
                             </li>
                             <li className="flex items-center">
                                 <Check className="text-fair mr-2" />
-                                <span>Lorem ipsum dolor sit amet</span>
+                                <span>Special discounts for online reservations</span>
                             </li>
                             <li className="flex items-center">
                                 <Check className="text-fair mr-2" />
-                                <span>Lorem ipsum dolor sit amet</span>
+                                <span>Flexible scheduling options</span>
                             </li>
                         </ul>
                     </div>
@@ -81,7 +81,7 @@ const BookYourTable = () => {
                                         name="name"
                                         value={formData.name}
                                         onChange={handleInputChange}
-                                        placeholder="Your Name"
+                                        placeholder="Full Name"
                                         className="w-full px-4 py-3 bg-transparent text-white outline-none"
                                         required
                                     />
@@ -95,7 +95,7 @@ const BookYourTable = () => {
                                         name="email"
                                         value={formData.email}
                                         onChange={handleInputChange}
-                                        placeholder="Your Email"
+                                        placeholder="Email Address"
                                         className="w-full px-4 py-3 bg-transparent text-white outline-none"
                                         required
                                     />
@@ -153,12 +153,12 @@ const BookYourTable = () => {
                                         className="w-full px-4 py-3 bg-transparent text-white outline-none"
                                         required
                                     >
-                                        <option className="text-dark" value="1">1 Person</option>
-                                        <option className="text-dark" value="2">2 People</option>
-                                        <option className="text-dark" value="3">3 People</option>
-                                        <option className="text-dark" value="4">4 People</option>
-                                        <option className="text-dark" value="5">5 People</option>
-                                        <option className="text-dark" value="6">6+ People</option>
+                                        <option className="text-dark" value="1">1 Guest</option>
+                                        <option className="text-dark" value="2">2 Guests</option>
+                                        <option className="text-dark" value="3">3 Guests</option>
+                                        <option className="text-dark" value="4">4 Guests</option>
+                                        <option className="text-dark" value="5">5 Guests</option>
+                                        <option className="text-dark" value="6">6+ Guests</option>
                                     </select>
                                 </div>
 
@@ -167,7 +167,7 @@ const BookYourTable = () => {
                                     type="submit"
                                     className="w-full bg-[var(--primary-fair)] text-dark py-3 px-6 font-bold hover:bg-opacity-90 transition-all duration-300"
                                 >
-                                    Book Now
+                                    Reserve Now
                                 </button>
                             </div>
                         </form>

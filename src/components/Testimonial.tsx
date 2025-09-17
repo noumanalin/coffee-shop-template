@@ -32,7 +32,7 @@ const Testimonial = () => {
           <SwiperSlide key={index}>
             <article className="p-8">
               <figure className="flex gap-3 items-center mb-3">
-                <img src={item.image} alt={item.name} className="w-16 h-1w-16 object-cover" />
+                <img src={item.image} alt={item.name} className="w-20 h-20 object-cover" />
                 <div>
                   <h3 className="text-dark text-xl font-semibold">{item.name}</h3>
                   <p className="text-accent mb-4">{item.profession}</p>

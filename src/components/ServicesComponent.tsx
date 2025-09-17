@@ -12,8 +12,8 @@ const ServicesComponent = () => {
                 {servicesItems.map((item:ServicesItem, index) => {
                     return (
                         <article key={index} className="flex items-center gap-3">
-                            <figure className=" ">
-                                <img src={item.image} alt="service image" loading="lazy"/>
+                            <figure className="w-24 h-24 ">
+                                <img src={item.image} className="w-full h-full object-cover" alt="service image" loading="lazy"/>
                             </figure>
                             <div>
                                 <h2 className="text-dark text-2xl flex gap-3 capitalize">

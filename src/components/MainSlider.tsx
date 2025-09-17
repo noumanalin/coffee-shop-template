@@ -27,7 +27,7 @@ const MainSlider = () => {
             key={index}
             className="flex-shrink-0 w-full h-full relative"
           >
-            <div className="absolute inset-0 bg-black/40"/>
+            <div className="absolute inset-0 bg-black/80"/>
             <img
               src={item.image}
               alt={`${item.item} banner`}
